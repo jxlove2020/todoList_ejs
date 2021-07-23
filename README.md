@@ -45,3 +45,16 @@
   </body>
   </html>
 ```
+
+### npm i ejs
+```
+const app = express();
+app.set("view engine", "ejs");
+
+app.get("/", (req, res) => {
+  res.render("index", {key: value})
+})
+```
+
+### views 폴더 생성 > index.ejs 파일 생성
+- index.html 에서 했던 작업을 이제는 index.ejs 파일로 하면 됩니다. 
