@@ -6,6 +6,9 @@ app.set("view engine", "ejs");
 
 app.use(bodyParser.urlencoded({extended: true}));
 
+// static 적용
+app.use(express.static("public"));
+
 let items = ["Buy Food","Cook Food","Eat Food"];
 
 app.get("/", (req, res) => {
